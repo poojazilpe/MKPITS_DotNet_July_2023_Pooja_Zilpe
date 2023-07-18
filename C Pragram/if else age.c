@@ -5,7 +5,7 @@ void main()
 	printf("Enter no =");
 	scanf("%d",&a);
 	if(a>60)
-	{
+    {
 		printf("%d is Old",a);
 	}
 	else
