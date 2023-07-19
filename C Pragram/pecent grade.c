@@ -35,7 +35,7 @@ return 0;
 
 //Algorithum
 //1) start
-//2) accept 3 sub marks;
+//2) accept 3 sub marks, input m1,m2,m3;
 //3) if percent is greater than equal to 75;
 //    3.1 print "Grade is Distinction";
 //4) else if percent greater than equal to 60 and less than 75;
