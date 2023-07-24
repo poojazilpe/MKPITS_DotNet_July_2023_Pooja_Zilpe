@@ -15,6 +15,7 @@ void main()
         break;
      default:
 	printf("It is  not Vowel");
+	break;
 	}
 
 	
@@ -26,6 +27,6 @@ void main()
 //3.1) print "it is vowel"
 //4) if character is not between (a,e, i, o, u) then
 //4.1 print "it is not vowel"
-//6) stop
+//5) stop
 
 

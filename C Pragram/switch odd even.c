@@ -7,10 +7,10 @@ void main()
 	switch (num%2==0)
 	{
 	 case 1:
-	   printf("No is Even=%d",num);
+	   printf("%d No is Even No",num);
         break;
      default:
-	printf("No is Odd=%d",num);
+	printf("%d No is Odd No",num);
 	break;
 	}
 }

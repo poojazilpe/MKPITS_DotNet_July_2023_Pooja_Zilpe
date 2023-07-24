@@ -25,6 +25,9 @@ else
 {
   discount=total_amount*0.10;  
 }
+printf("-------------------------\n");
+printf("\tTotal Bill\t\n");
+printf("--------------------------\n");
 printf("Customer_Name =%s\n",customer_name);
 printf("Product_Name =%s\n",product_name);
 printf("Price=%d\n",price);
