@@ -15,7 +15,7 @@ void main()
 		printf("sum=%d\n",sum);
 	if(sum==i)
 	{
-		printf("%d Amstrong no",sum);
+		printf("%d Armstrong no",sum);
 	}
 	else 
 	{
