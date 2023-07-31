@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<std0io.h>
 void addition(int n1, int n2)
 {
 	int result=n1+n2;
@@ -24,4 +24,12 @@ printf("\nbye");
 //6) accept 2 no
 //6) call the addition function
 //7) stop
+
+
+
+
+
+
+
+
 
