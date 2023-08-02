@@ -1,6 +1,6 @@
 //function with parameter and return a value
 #include<stdio.h>
-int average(float n1,float n2,float  n3, float n4, float n5,float add)
+float average(float n1,float n2,float  n3, float n4, float n5,float add)
 {
 	float result=add/5.0f;
 	return result;

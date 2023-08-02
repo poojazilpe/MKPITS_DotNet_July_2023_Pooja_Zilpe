@@ -1,4 +1,4 @@
-//function with parameter no return value.
+//nfunction with parameter no return value.
 #include<stdio.h>
 void check(int num, int rem)
 {

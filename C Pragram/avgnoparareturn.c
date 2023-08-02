@@ -1,6 +1,6 @@
 //function without parameter and return a value
 #include<stdio.h>
-int average()
+float average()
 {
 	float n1,n2,n3,n4,n5, add;
 	float result;
