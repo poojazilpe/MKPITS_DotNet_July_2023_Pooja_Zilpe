@@ -1,4 +1,4 @@
-// write a program to count total no of duplicate element in an array
+// write a program to print all unique element in an array
 #include<stdio.h>
 void main()
 {

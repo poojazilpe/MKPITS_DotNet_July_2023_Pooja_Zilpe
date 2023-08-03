@@ -1,4 +1,4 @@
-
+//Write a program to  print string using pointer
 #include<stdio.h>
 //#include<string.h>
 void main()
