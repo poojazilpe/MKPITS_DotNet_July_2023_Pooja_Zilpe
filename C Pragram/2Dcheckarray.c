@@ -5,7 +5,6 @@ void main()
 	int row,col,i;
 	int arr1[2][2];
 	int arr2[2][2];
-	int arr3[2][2];
 	printf("Enter first matrices :");
 	for(row=0;row<2;row++)
 	{
