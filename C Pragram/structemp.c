@@ -1,3 +1,4 @@
+//write a program to accept details of 5 employee and display then using stucture emp id, name, designation, department and salary
 #include<stdio.h>
 #include<string.h>
 struct employee

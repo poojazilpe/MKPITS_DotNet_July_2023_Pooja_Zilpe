@@ -1,3 +1,5 @@
+//write a program to read details of two worker calculate total payment of workers using stucture
+// name wage, working days
 #include<stdio.h>
 #include<string.h>
 struct worker

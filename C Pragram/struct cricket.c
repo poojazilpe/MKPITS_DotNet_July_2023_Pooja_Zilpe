@@ -1,3 +1,5 @@
+//write a program to accept batting information of cricket team using structure it contains player name and run sport by player
+//calculate total run sport by cricket team.
 #include<stdio.h>
 #include<string.h>
 struct cricket 
@@ -15,8 +17,9 @@ void main()
 		scanf("%s%d",c1[counter].name,&c1[counter].run);
 	}
 	for(counter=0;counter<11;counter++)
-	
-		sum=sum+c1[counter].run;
+	{
+		000303sum=sum+c1[counter].run;
+	}
 		printf("Total run scored by team = %d",sum);
 }
 //Algorithum

@@ -1,3 +1,4 @@
+//Write a program to accept student name and fees for 5 month calculate amount perday
 #include<stdio.h>
 #include<string.h>
 struct student

@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+class bank
+{
+	public:
+		int accno,balance,amt;
+		bank()
+		{
+			balance=0;
+			amt=0;
+		}
+		int getdeposite()
+		{
+			cout<<"Enter deposite amount :";
+			cin>>amt;
+			balance=balance+amt;
+			cout<<"Amount Deposite :"<<balance<<endl;
+			return 0;
+		}
+		int getwithdrow()
+		{
+			cout<<"Enter withdrow amount :";
+			cin>>amt;
+			balance=balance-amt;
+			cout<<"Total Amount after withdrow:"<<balance<<endl;
+		}
+		
+};
+int main()
+{
+	bank b1;
+	cout<<"Enter account no and balance";
+	cin>>b1.accno>>b1.balance;
+	b1.getdeposite();
+	b1.getwithdrow();
+	return 0;
+}
