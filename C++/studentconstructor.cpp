@@ -8,9 +8,9 @@ class student
 	float m1,m2,m3,total,per,grade;
 	student()
 	{
-		total=0;
-		per=0;
-		grade=0;	
+		m1=0;
+		m2=0;
+		m3=0;	
 	}
 		void getstudent()
 	{
@@ -38,7 +38,7 @@ class student
 		}
 		else if(per>=60)
 		{
-			cout<<"Grade is A"<<endl;	;
+			cout<<"Grade is A"<<endl;	
 		}
 		else if(per>=40)
 		{

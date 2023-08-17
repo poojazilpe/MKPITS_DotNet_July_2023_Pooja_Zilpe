@@ -7,8 +7,8 @@ void main()
 	char *ptr1, *ptr2;
 	printf("Enter any name :");
 	gets(name1);
-	ptr1=name1;
-	ptr2=name2;
+	ptr1=&name1;
+	ptr2=&name2;
 	while(*ptr1 != '\0')
 	{
 		*ptr2=*ptr1;

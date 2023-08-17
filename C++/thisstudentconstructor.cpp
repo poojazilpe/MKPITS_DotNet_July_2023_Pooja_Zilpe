@@ -6,11 +6,11 @@ class student
 	int rollno, clas;
 	string name;
 	float m1,m2,m3,total,per,grade;
-	student(float total,float per,float grade)
+	student(float m1,float m2,float m3)
 	{
-		this -> total=total;
-		this -> per=per;
-		this -> grade=grade;	
+		this -> m1=m1;
+		this -> m2=m2;
+		this -> m3=m3;	
 	}
 		void getstudent()
 	{
