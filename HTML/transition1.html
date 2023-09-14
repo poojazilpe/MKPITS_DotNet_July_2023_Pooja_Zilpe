@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ 
+<html>
+     
+    <head>
+ 
+        
+ 
+        <style>
+             
+            div.div1
+            {
+                width: 20px;
+                height: 20px;
+                margin: 20px auto;
+            }
+             
+            div.div1 div.div2 img
+            {
+                width: 20px;
+                height: 20px;
+                
+               transition: 5s;
+               transition-duration: 5s;
+		
+            }
+             
+            div.div1:hover div.div2 img
+            {
+                width: 240px;
+                height: 220px;
+                transform:rotate(-360deg);
+                
+            }
+             
+        </style>
+     
+    </head>
+    <body>
+ 
+        <p>Hover on object to see it in action</p>
+        <div class="div1">
+            <div class="div2">
+            <img src="pexels.png"width="20" height="20"/>
+            </div>
+        </div>
+ 
+    </body>
+     
+</html>
