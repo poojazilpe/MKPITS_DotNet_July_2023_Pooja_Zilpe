@@ -1,0 +1,151 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Cambria Math;}{\f2\fnil\fcharset0 Cambria Math;}}
+{\*\generator Riched20 10.0.17763}{\*\mmathPr\mmathFont1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 The Bootstrap grid system is the fastest and easy way to create responsive website layout.\par
+\par
+What is Bootstrap Grid System?\par
+Bootstrap grid system provides an easy and powerful way to create responsive layouts of all shapes and sizes. It is built with flexbox with mobile-first approach. Also, it is fully responsive and uses twelve column system (12 columns available per row) and six default responsive tiers.\par
+\par
+You can use the Bootstrap's predefined grid classes for quickly making the layouts for different types of devices like mobile phones, tablets, laptops, desktops, and so on. For example, you can use the .col-* classes to create grid columns for extra small devices like mobile phones in portrait mode, and the .col-sm-* classes for mobile phones in landscape mode.\par
+\par
+Similarly, you can use the .col-md-* classes to create grid columns for medium screen devices like tablets, the .col-lg-* classes for devices like small laptops, the .col-xl-* classes for laptops and desktops, and the .col-xxl-* classes for large desktop screens.\par
+\par
+The following table summarizes the key features of the Bootstrap's grid system.\par
+\par
+Features\par
+Bootstrap  Grid System\par
+X-Small (xs)\par
+<576px\par
+Small (sm)\par
+\f1\u8805?\f0 576px\par
+Medium (md)\par
+\f1\u8805?\f0 768px\par
+Large (lg)\par
+\f1\u8805?\f0 992px\par
+X-Large (xl)\par
+\f1\u8805?\f0 1200px\par
+XX-Large (xxl)\par
+\f1\u8805?\f0 1400px\par
+Container max-width\tab None (auto)\tab 540px\tab 720px\tab 960px\tab 1140px\tab 1320px\par
+Class prefix\tab .col-\tab .col-sm-\tab .col-md-\tab .col-lg-\tab .col-xl-\tab .col-xxl-\par
+Number of columns\tab 12\par
+Gutter width\tab 1.5rem (.75rem on left and right)\par
+Custom gutters\tab Yes\par
+Nestable\tab Yes\par
+Column ordering\tab Yes\par
+Above table demonstrates one important thing, applying any .col-sm-* class to an element will not only have an effect on small devices, but also on medium, large and extra large devices (viewport width \f1\u8805?\f0 768px), if a .col-md-*, .col-lg-*, .col-xl-*, or .col-xxl-* class is not present.\par
+\par
+Similarly, the .col-md-* class will not only have an effect on medium devices, but also on large and extra large devices if a .col-lg-*, .col-xl-*, or .col-xxl-* class is not present.\par
+\par
+Now the question arises how to create rows and columns using this 12 column responsive grid system. The answer is pretty simple, at first create a container that acts as a wrapper for your rows and columns using any container classes such as .container, after that create rows inside the container using the .row class, and to create columns inside any row you can use the .col-*, .col-sm-*, .col-md-*, .col-lg-*, .col-xl-* and .col-xxl-* classes.\par
+\par
+The columns are actual content area where we will place our contents. In the following sections we will put all these things into real action and see how it actually works:\par
+\par
+Creating Two Column Layouts\par
+The following example will show you how to create two column layouts for medium, large and extra large devices like tables, laptops and desktops etc. However, on mobile phones (screen width less than 768px), the columns will automatically become horizontal (2 rows, 1 column).\par
+\par
+\f2 <\f0 div\f2  \f0 class\f2 =\f0 "container"\f2 >\f0\par
+\f2     <!--\f0 Row\f2  \f0 with\f2  \f0 two\f2  \f0 equal\f2  \f0 columns\f2 -->\f0\par
+\f2     <\f0 div\f2  \f0 class\f2 =\f0 "row"\f2 >\f0\par
+\f2         <\f0 div\f2  \f0 class\f2 =\f0 "col\f2 -\f0 md\f2 -\f0 6"\f2 >\f0 Column\f2  \f0 left\f2 </\f0 div\f2 >\f0\par
+\f2         <\f0 div\f2  \f0 class\f2 =\f0 "col\f2 -\f0 md\f2 -\f0 6"\f2 >\f0 Column\f2  \f0 right\f2 </\f0 div\f2 >\f0\par
+\f2     </\f0 div\f2 >\f0\par
+\f2     \f0\par
+\f2     <!--\f0 Row\f2  \f0 with\f2  \f0 two\f2  \f0 columns\f2  \f0 divided\f2  \f0 in\f2  \f0 1\f2 :\f0 2\f2  \f0 ratio\f2 -->\f0\par
+\f2     <\f0 div\f2  \f0 class\f2 =\f0 "row"\f2 >\f0\par
+\f2         <\f0 div\f2  \f0 class\f2 =\f0 "col\f2 -\f0 md\f2 -\f0 4"\f2 >\f0 Column\f2  \f0 left\f2 </\f0 div\f2 >\f0\par
+\f2         <\f0 div\f2  \f0 class\f2 =\f0 "col\f2 -\f0 md\f2 -\f0 8"\f2 >\f0 Column\f2  \f0 right\f2 </\f0 div\f2 >\f0\par
+\f2     </\f0 div\f2 >\f0\par
+\f2     \f0\par
+\f2     <!--\f0 Row\f2  \f0 with\f2  \f0 two\f2  \f0 columns\f2  \f0 divided\f2  \f0 in\f2  \f0 1\f2 :\f0 3\f2  \f0 ratio\f2 -->\f0\par
+\f2     <\f0 div\f2  \f0 class\f2 =\f0 "row"\f2 >\f0\par
+\f2         <\f0 div\f2  \f0 class\f2 =\f0 "col\f2 -\f0 md\f2 -\f0 3"\f2 >\f0 Column\f2  \f0 left\f2 </\f0 div\f2 >\f0\par
+\f2         <\f0 div\f2  \f0 class\f2 =\f0 "col\f2 -\f0 md\f2 -\f0 9"\f2 >\f0 Column\f2  \f0 right\f2 </\f0 div\f2 >\f0\par
+\f2     </\f0 div\f2 >\f0\par
+\f2 </\f0 div\f2 >\par
+\par
+Note: In a grid layout, content must be placed inside the columns (.col and .col-*) and only columns may be the immediate children of rows (.row). Also, rows should be placed inside a container (either fixed or fluid) for proper padding and alignment.\par
+\par
+Tip: Grid column widths are set in percentages, so they're always fluid and sized relative to their parent element. In addition, each column has horizontal padding (called a gutter) for controlling the space between individual columns.\par
+\par
+Since the Bootstrap grid system is based on 12 columns, therefore to keep the columns in a one line (i.e. side by side), the sum of the grid column numbers within a single row should not be greater than 12. If you go through the above example code carefully you will find the numbers of grid columns (i.e. col-md-*) add up to twelve (6+6, 4+8 and 3+9) for every row.\par
+\par
+Creating Three Column Layouts\par
+Similarly, you can create other layouts based on the above principle. For instance, the following example will typically create three column layouts for laptops and desktops screens. It also works in tablets in landscape mode if screen resolution is more than or equal to 992 pixels (e.g. Apple iPad). However, in portrait mode the grid columns will be horizontal as usual.\par
+\par
+<div class="container">\par
+    <!--Row with three equal columns-->\par
+    <div class="row">\par
+        <div class="col-lg-4">Column left</div>\par
+        <div class="col-lg-4">Column middle</div>\par
+        <div class="col-lg-4">Column right</div>\par
+    </div>\par
+    \par
+    <!--Row with three columns divided in 1:4:1 ratio-->\par
+    <div class="row">\par
+        <div class="col-lg-2">Column left</div>\par
+        <div class="col-lg-8">Column middle</div>\par
+        <div class="col-lg-2">Column right</div>\par
+    </div>\par
+    \par
+    <!--Row with three columns divided unevenly-->\par
+    <div class="row">\par
+        <div class="col-lg-3">Column left</div>\par
+        <div class="col-lg-7">Column middle</div>\par
+        <div class="col-lg-2">Column right</div>\par
+    </div>\par
+</div>\par
+Note: If more than 12 grid columns are placed within a single row, then each group of extra columns, as a whole, will wrap onto a new line. \par
+\par
+Bootstrap Auto-layout Columns\par
+You can also create equal width columns for all devices (x-small, small, medium, large, x-large, and xx-large) through simply using the class .col, without specifying any column number.\par
+\par
+Let's try out the following example to understand how it exactly works:\par
+<div class="container">\par
+    <!--Row with two equal columns-->\par
+    <div class="row">\par
+        <div class="col">Column one</div>\par
+        <div class="col">Column two</div>\par
+    </div>\par
+    \par
+    <!--Row with three equal columns-->\par
+    <div class="row">\par
+        <div class="col">Column one</div>\par
+        <div class="col">Column two</div>\par
+        <div class="col">Column three</div>\par
+    </div>\par
+</div>\par
+Additionally, you can also set the width of one column and let the sibling columns automatically resize around it equally. You may use the predefined grid classes or inline widths.\par
+\par
+If you try the following example you'll find columns in a row with class .col has equal width.\par
+\par
+<div class="container">\par
+    <!--Row with two equal columns-->\par
+    <div class="row">\par
+        <div class="col">Column one</div>\par
+        <div class="col">Column two</div>\par
+    </div>\par
+    \par
+    <!--Row with three columns divided in 1:2:1 ratio-->\par
+    <div class="row">\par
+        <div class="col">Column one</div>\par
+        <div class="col-sm-6">Column two</div>\par
+        <div class="col">Column three</div>\par
+    </div>\par
+</div>\par
+\par
+Column Wrapping Behavior\par
+Now we are going to create more flexible layouts that changes the column orientation based on the viewport size. The following example will create a three column layout on large devices like laptops and desktops, as well as on tablets (e.g. Apple iPad) in landscape mode, but on medium devices like tablets in portrait mode (768px \u8804? screen width < 992px), it will change into a two column layout where the third column moves at the bottom of the first two columns.\par
+<div class="container">\par
+    <div class="row">\par
+        <div class="col-md-4 col-lg-3">Column one</div>\par
+        <div class="col-md-8 col-lg-6">Column two</div>\par
+        <div class="col-md-12 col-lg-3">Column three</div>\par
+    </div>\par
+</div>\par
+\par
+As you can see in the example above the sum of the medium grid column numbers (i.e. col-md-*) is 3\u8201?+\u8201?9\u8201?+\u8201?12\u8201?=\u8201?24\u8201?>\u8201?12, therefore the third <div> element with the class .col-md-12 that is adding the extra columns beyond the maximum 12 columns in a .row, gets wrapped onto a new line as one contiguous unit on the medium screen size devices.\par
+\par
+Similarly, you can create even more adaptable layouts for your websites using the Bootstrap's grid column wrapping feature.\par
+\f0\lang9\par
+}
+ 
