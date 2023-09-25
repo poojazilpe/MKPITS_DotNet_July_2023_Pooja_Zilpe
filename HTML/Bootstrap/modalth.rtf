@@ -1,0 +1,202 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Bootstrap Modals\par
+The bootstrap modal plugin is a dialog box / popup window that is displayed on top of the current page.\par
+\par
+Bootstrap Modal Example\par
+<!DOCTYPE html>  \par
+<html lang="en">  \par
+<head>  \par
+  <title>Bootstrap Example</title>  \par
+  <meta charset="utf-8">  \par
+  <meta name="viewport" content="width=device-width, initial-scale=1">  \par
+  <link rel="stylesheet" href="{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\ul0\cf0}}}}\f0\fs22 ">  \par
+    \par
+</head>  \par
+<body>  \par
+  \par
+<div class="container">  \par
+  <h2>Modal Example</h2>  \par
+  <!-- Trigger the modal with a button -->  \par
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>  \par
+  \par
+  <!-- Modal -->  \par
+  <div class="modal fade" id="myModal" role="dialog">  \par
+    <div class="modal-dialog">  \par
+      \par
+      <!-- Modal content-->  \par
+      <div class="modal-content">  \par
+        <div class="modal-header">  \par
+          <button type="button" class="close" data-dismiss="modal">\'d7</button>  \par
+          <h4 class="modal-title">Modal Header</h4>  \par
+        </div>  \par
+        <div class="modal-body">  \par
+          <p>Write your text in the modal.</p>  \par
+        </div>  \par
+        <div class="modal-footer">  \par
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  \par
+        </div>  \par
+      </div>  \par
+        \par
+    </div>  \par
+  </div>  \par
+    \par
+</div>  \par
+<script src="{{\field{\*\fldinst{HYPERLINK https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js }}{\fldrslt{https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+<script src="{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+</body>  \par
+</html>  \par
+------------------------------------------------\par
+login modal form\par
+\par
+<!DOCTYPE html>  \par
+<html lang="en">  \par
+<head>  \par
+  <title>Bootstrap Example</title>  \par
+  <meta charset="utf-8">  \par
+  <meta name="viewport" content="width=device-width, initial-scale=1">  \par
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  \par
+    \par
+</head>  \par
+<body>  \par
+  \par
+<div class="container">  \par
+  <h2>Modal Example</h2>  \par
+  <!-- Trigger the modal with a button -->  \par
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>  \par
+  \par
+\par
+  <!-- Modal -->  \par
+  <div class="modal fade" id="myModal" role="dialog">  \par
+    <div class="modal-dialog">  \par
+      \par
+      <!-- Modal content-->  \par
+      <div class="modal-content">  \par
+        <div class="modal-header">  \par
+          <button type="button" class="close" data-dismiss="modal">\'d7</button>  \par
+          <h4 class="modal-title">login</h4>  \par
+        </div>  \par
+        <div class="modal-body">  \par
+          <p>please login .</p>  \par
+\tab\tab   <form action="/action_page.php">\par
+    <div class="form-group">\par
+      <label for="email">Email:</label>\par
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">\par
+    </div>\par
+    <div class="form-group">\par
+      <label for="pwd">Password:</label>\par
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">\par
+    </div>\par
+    <div class="form-group form-check">\par
+      <label class="form-check-label">\par
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me\par
+      </label>\par
+    </div>\par
+    <button type="submit" class="btn btn-primary">Submit</button>\par
+  </form>\par
+        </div>  \par
+        <div class="modal-footer">  \par
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  \par
+        </div>  \par
+      </div>  \par
+        \par
+    </div>  \par
+  </div>  \par
+    \par
+</div>  \par
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  \par
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  \par
+</body>  \par
+</html>  \par
+\par
+\par
+\par
+\par
+Bootstrap Modal Size\par
+You can change the size of the modal by adding the .modal-sm class for small modals or .modal-lg class for large modals.\par
+\par
+The size class is added to the <div> element with class .modal-dialog.\par
+\par
+<!DOCTYPE html>  \par
+<html lang="en">  \par
+<head>  \par
+  <title>Bootstrap Example</title>  \par
+  <meta charset="utf-8">  \par
+  <meta name="viewport" content="width=device-width, initial-scale=1">  \par
+  <link rel="stylesheet" href="{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\ul0\cf0}}}}\f0\fs22 ">  \par
+    \par
+</head>  \par
+<body>  \par
+  \par
+<div class="container">  \par
+  <h2>Small Modal</h2>  \par
+  <!-- Trigger the modal with a button -->  \par
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>  \par
+  \par
+  <!-- Modal -->  \par
+  <div class="modal fade" id="myModal" role="dialog">  \par
+    <div class="modal-dialog modal-sm">  \par
+      <div class="modal-content">  \par
+        <div class="modal-header">  \par
+          <button type="button" class="close" data-dismiss="modal">\'d7</button>  \par
+          <h4 class="modal-title">Modal Header</h4>  \par
+        </div>  \par
+        <div class="modal-body">  \par
+          <p>This is a small modal.</p>  \par
+        </div>  \par
+        <div class="modal-footer">  \par
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  \par
+        </div>  \par
+      </div>  \par
+    </div>  \par
+  </div>  \par
+</div>  \par
+<script src="{{\field{\*\fldinst{HYPERLINK https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js }}{\fldrslt{https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+<script src="{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+</body>  \par
+</html>  \par
+\par
+Bootstrap Large Modal\par
+See this example:\par
+\par
+<!DOCTYPE html>  \par
+<html lang="en">  \par
+<head>  \par
+  <title>Bootstrap Example</title>  \par
+  <meta charset="utf-8">  \par
+  <meta name="viewport" content="width=device-width, initial-scale=1">  \par
+  <link rel="stylesheet" href="{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\ul0\cf0}}}}\f0\fs22 ">  \par
+    \par
+</head>  \par
+<body>  \par
+  \par
+<div class="container">  \par
+  <h2>Large Modal</h2>  \par
+  <!-- Trigger the modal with a button -->  \par
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>  \par
+  \par
+  <!-- Modal -->  \par
+  <div class="modal fade" id="myModal" role="dialog">  \par
+    <div class="modal-dialog modal-lg">  \par
+      <div class="modal-content">  \par
+        <div class="modal-header">  \par
+          <button type="button" class="close" data-dismiss="modal">\'d7</button>  \par
+          <h4 class="modal-title">Modal Header</h4>  \par
+        </div>  \par
+        <div class="modal-body">  \par
+          <p>This is a large modal.</p>  \par
+        </div>  \par
+        <div class="modal-footer">  \par
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  \par
+        </div>  \par
+      </div>  \par
+    </div>  \par
+  </div>  \par
+</div>  \par
+<script src="{{\field{\*\fldinst{HYPERLINK https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js }}{\fldrslt{https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+<script src="{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+</body>  \par
+</html>  \par
+}
+ 

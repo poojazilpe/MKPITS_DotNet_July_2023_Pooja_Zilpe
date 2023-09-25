@@ -1,0 +1,172 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Bootstrap Spinners\par
+Spinner is also called a loading indicator. It is used to display/indicate the loading state of our projects. Bootstrap uses a .spinner class to create a Spinner.\par
+\par
+We use the below syntax to create a Spinner in Bootstrap -\par
+\par
+<div class = "spinner-border"> </div>  \par
+Types of Spinners\par
+There are the following types of spinners that we create using Bootstrap -\par
+\par
+1. Border Spinner\par
+Border Spinner is used for lightweight indicators.\par
+\par
+Pause\par
+\par
+Unmute\par
+Current Time\'c2 \par
+0:08\par
+/\par
+Duration\'c2 \par
+18:10\par
+\'c2 \par
+\par
+Fullscreen\par
+\par
+We use the below syntax to create a Border Spinner in Bootstrap -\par
+\par
+Syntax:\par
+\par
+<div class = "spinner-border" role = "status">  \par
+  <span class = "sr-only">Loading...</span>  \par
+</div>  \par
+Code:\par
+\par
+<!DOCTYPE html>  \par
+<html lang = "en">  \par
+<head>  \par
+    <meta charset = "UTF-8">  \par
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">  \par
+    <title>Bootstrap Border Spinner Example</title>  \par
+    <!-- Bootstrap CDN -->  \par
+    <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  \par
+  <script src = "{{\field{\*\fldinst{HYPERLINK https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js }}{\fldrslt{https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+  <script src = "{{\field{\*\fldinst{HYPERLINK https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js }}{\fldrslt{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+  <script src = "{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+  <style>  \par
+      .container \{  \par
+          text-align: center;  \par
+            \par
+      \}  \par
+  </style>  \par
+</head>  \par
+<body>  \par
+    <div class = "container">  \par
+        <div class = "jumbotron">  \par
+          <h1>Border Spinner Example</h1>   \par
+          <div class = "spinner-border" role = "status">   \par
+              <!-- status notify to Screen reader that this element is in the process -->  \par
+              <span class = "sr-only">Loading...</span>  \par
+              <!-- sr-only class hidden in normal devices, but it can be detected by screen readers -->  \par
+          </div>   \par
+        </div>  \par
+    </div>  \par
+</body>  \par
+</html>  \par
+\par
+2. Colored Spinners\par
+We use the below syntax to create a Colored Spinner in Bootstrap -\par
+\par
+<div class = "spinner-border text-light" role = "status">  \par
+  <span class = "sr-only">Loading...</span>  \par
+</div>  \par
+Code:\par
+\par
+<!DOCTYPE html>  \par
+<html lang = "en">  \par
+  \par
+<head>  \par
+    <meta charset = "UTF-8">  \par
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">  \par
+    <title>Bootstrap Border Spinner Example</title>  \par
+    <!-- Bootstrap CDN -->  \par
+    <link rel = "stylesheet" href = "{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\ul0\cf0}}}}\f0\fs22 ">  \par
+    <script src = "{{\field{\*\fldinst{HYPERLINK https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js }}{\fldrslt{https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+    <script src = "{{\field{\*\fldinst{HYPERLINK https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js }}{\fldrslt{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+    <script src = "{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+    <style>  \par
+        .container \{  \par
+            text-align: center;  \par
+  \par
+        \}  \par
+    </style>  \par
+</head>  \par
+  \par
+<body>  \par
+    <div class = "container">  \par
+        <div class = "jumbotron">  \par
+            <h1>Colored Spinner Example</h1>  \par
+            <!-- Colored Spinners -->  \par
+            <div class="spinner-border text-muted" role="status">  \par
+                <span class="sr-only">Loading...</span>  \par
+            </div>  \par
+            <div class = "spinner-border text-success" role = "status">  \par
+                <span class = "sr-only">Loading...</span>  \par
+            </div>  \par
+            <div class = "spinner-border text-info" role = "status">  \par
+                <span class = "sr-only">Loading...</span>  \par
+            </div>  \par
+            <div class = "spinner-border text-light" role = "status">  \par
+                <span class = "sr-only">Loading...</span>  \par
+            </div>  \par
+            <div class = "spinner-border text-primary" role = "status">  \par
+                <span class="sr-only">Loading...</span>  \par
+            </div>  \par
+            <div class = "spinner-border text-secondary" role = "status">  \par
+                <span class = "sr-only">Loading...</span>  \par
+            </div>  \par
+            <div class = "spinner-border text-danger" role = "status">  \par
+                <span class = "sr-only">Loading...</span>  \par
+            </div>  \par
+            <div class = "spinner-border text-warning" role = "status">  \par
+                <span class = "sr-only">Loading....</span>  \par
+                <div class = "spinner-border text-dark" role = "status">  \par
+                    <span class = "sr-only">Loading...</span>  \par
+  \par
+                </div>  \par
+            </div>  \par
+        </div>  \par
+    </div>  \par
+    </div>  \par
+</body>  \par
+</html>  \par
+\par
+3. Growing Spinner\par
+We use .spinner-grow class to create a Growing Spinner in Bootstrap.\par
+\par
+Syntax:\par
+\par
+<div class = "spinner-grow" role = "status">   \par
+     <span class = "sr-only">Loading</span>  \par
+</div>  \par
+Code:\par
+\par
+<!DOCTYPE html>  \par
+<html lang = "en">  \par
+<head>  \par
+    <meta charset = "UTF-8">  \par
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">  \par
+    <title>Bootstrap Growing Spinner Example</title>  \par
+    <!-- Bootstrap CDN -->  \par
+    <link rel = "stylesheet" href = "{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\ul0\cf0}}}}\f0\fs22 ">  \par
+  <script src = "{{\field{\*\fldinst{HYPERLINK https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js }}{\fldrslt{https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+  <script src = "{{\field{\*\fldinst{HYPERLINK https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js }}{\fldrslt{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+  <script src = "{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\ul0\cf0}}}}\f0\fs22 "></script>  \par
+</head>    \par
+</head>  \par
+<body>  \par
+    <div class = "container">  \par
+        <div class = "jumbotron">  \par
+            <h1>Growing Spinner Example</h1>  \par
+            <!-- Growing Spinner -->  \par
+            <div class = "spinner-grow" role = "status">  \par
+                <span class = "sr-only">Loading...</span>  \par
+            </div>  \par
+        </div>  \par
+    </div>  \par
+</body>  \par
+</html>  \par
+}
+ 

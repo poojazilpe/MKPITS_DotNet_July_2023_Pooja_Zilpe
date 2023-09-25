@@ -1,0 +1,531 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 What is Table?\par
+The HTML tables are used to present data in grid manner like row and columns. Using Bootstrap you can greatly improve the appearance of table in a quick and easy way.\par
+\par
+See the tutorial on HTML tables to learn more about tables.\par
+\par
+Creating a Simple Table with Bootstrap\par
+You can create tables with basic styling that has horizontal dividers and small cell padding (8px by default), by just adding the Bootstrap's class .table to the <table> element.\par
+\par
+ExampleTry this code \'bb\par
+<!DOCTYPE html>\par
+<html lang="en">\par
+<head>\par
+<meta charset="utf-8">\par
+<meta name="viewport" content="width=device-width, initial-scale=1">\par
+<title>Bootstrap Simple Table</title>\par
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">\par
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>\par
+</head>\par
+<body>\par
+<div class="m-4">\par
+    <table class="table">\par
+        <thead>\par
+            <tr>\par
+                <th>#</th>\par
+                <th>First Name</th>\par
+                <th>Last Name</th>\par
+                <th>Email</th>\par
+            </tr>\par
+        </thead>\par
+        <tbody>\par
+            <tr>\par
+                <td>1</td>\par
+                <td>Clark</td>\par
+                <td>Kent</td>\par
+                <td>clarkkent@mail.com</td>\par
+            </tr>\par
+            <tr>\par
+                <td>2</td>\par
+                <td>Peter</td>\par
+                <td>Parker</td>\par
+                <td>peterparker@mail.com</td>\par
+            </tr>\par
+            <tr>\par
+                <td>3</td>\par
+                <td>John</td>\par
+                <td>Carter</td>\par
+                <td>johncarter@mail.com</td>\par
+            </tr>\par
+        </tbody>\par
+    </table>\par
+</div>\par
+</body>\par
+</html>\par
+\f1\emdash  The output of the above example will look something like this:\par
+\par
+Bootstrap Simple Table\par
+Creating Accented Tables\par
+Bootstrap even provides a handful of contextual classes such as .table-primary, .table-secondary, .table-success, .table-danger, .table-warning, .table-info, .table-light and .table-dark to color tables, table rows or individual cells.\par
+\par
+For example, you can create a dark version of the table (i.e. table with light text on dark backgrounds) by adding the contextual class .table-dark to the .table base class, like this:\par
+\par
+ExampleTry this code \f0\'bb\par
+<table class="table table-dark">\par
+    <thead>\par
+        <tr>\par
+            <th>#</th>\par
+            <th>First Name</th>\par
+            <th>Last Name</th>\par
+            <th>Email</th>\par
+        </tr>\par
+    </thead>\par
+    <tbody>\par
+        <tr>\par
+            <td>1</td>\par
+            <td>Clark</td>\par
+            <td>Kent</td>\par
+            <td>clarkkent@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>2</td>\par
+            <td>Peter</td>\par
+            <td>Parker</td>\par
+            <td>peterparker@mail.com</td>\par
+        </tr> \par
+        <tr>\par
+            <td>3</td>\par
+            <td>John</td>\par
+            <td>Carter</td>\par
+            <td>johncarter@mail.com</td>\par
+        </tr>                   \par
+    </tbody>\par
+</table>\par
+\f1\emdash  The output of the above example will look something like this:\par
+\par
+Bootstrap Dark Table\par
+Similarly, you can use other contextual classes. For instance, the following example uses the class .table-success on the .table to create green colored variant of a table.\par
+\par
+ExampleTry this code \f0\'bb\par
+<table class="table table-success">\par
+    <thead>\par
+        <tr>\par
+            <th>#</th>\par
+            <th>First Name</th>\par
+            <th>Last Name</th>\par
+            <th>Email</th>\par
+        </tr>\par
+    </thead>\par
+    <tbody>\par
+        <tr>\par
+            <td>1</td>\par
+            <td>Clark</td>\par
+            <td>Kent</td>\par
+            <td>clarkkent@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>2</td>\par
+            <td>Peter</td>\par
+            <td>Parker</td>\par
+            <td>peterparker@mail.com</td>\par
+        </tr> \par
+        <tr>\par
+            <td>3</td>\par
+            <td>John</td>\par
+            <td>Carter</td>\par
+            <td>johncarter@mail.com</td>\par
+        </tr>                   \par
+    </tbody>\par
+</table>\par
+\f1\emdash  The output of the above example will look something like this:\par
+\par
+Bootstrap Accented Table\par
+Check out the snippets section for examples of some beautifully designed Bootstrap tables.\par
+\par
+Tip: You can use these contextual classes on the .table base class to create colored version of any table such as stripped, hoverable, bordered, compact table, and so on.\par
+\par
+Similar to the tables you can also use these contextual classes to emphasize the rows within a table. Here's an example of a table with emphasized rows, let's take a look:\par
+\par
+ExampleTry this code \f0\'bb\par
+<table class="table">\par
+    <thead>\par
+        <tr>\par
+            <th>#</th>\par
+            <th>Bill</th>\par
+            <th>Payment Date</th>\par
+            <th>Payment Status</th>\par
+        </tr>\par
+    </thead>\par
+    <tbody>\par
+        <tr class="table-primary">\par
+            <td>1</td>\par
+            <td>Credit Card</td>\par
+            <td>04/07/2021</td>\par
+            <td>Waiting for statement</td>\par
+        </tr>\par
+        <tr class="table-secondary">\par
+            <td>2</td>\par
+            <td>Insurance</td>\par
+            <td>02/07/2021</td>\par
+            <td>Cancelled</td>\par
+        </tr>\par
+        <tr class="table-success">\par
+            <td>3</td>\par
+            <td>Water</td>\par
+            <td>01/07/2021</td>\par
+            <td>Paid</td>\par
+        </tr>\par
+        <tr class="table-info">\par
+            <td>4</td>\par
+            <td>Internet</td>\par
+            <td>05/07/2021</td>\par
+            <td>Change plan</td>\par
+        </tr>\par
+        <tr class="table-warning">\par
+            <td>5</td>\par
+            <td>Electricity</td>\par
+            <td>03/07/2021</td>\par
+            <td>Pending</td>\par
+        </tr>\par
+        <tr class="table-danger">\par
+            <td>6</td>\par
+            <td>Telephone</td>\par
+            <td>06/07/2021</td>\par
+            <td>Due</td>\par
+        </tr>\par
+        <tr class="table-light">\par
+            <td>7</td>\par
+            <td>Car Service</td>\par
+            <td>08/07/2021</td>\par
+            <td>Call in to confirm</td>\par
+        </tr>\par
+        <tr class="table-dark">\par
+            <td>8</td>\par
+            <td>Gas</td>\par
+            <td>06/07/2021</td>\par
+            <td>Payment failed</td>\par
+        </tr>\par
+    </tbody>\par
+</table>\par
+\f1\emdash  The output of the above example will look something like this:\par
+\par
+Bootstrap Table with Accented Rows\par
+Creating Tables with Striped Rows\par
+You can also add zebra-striping to the table rows within the <tbody> by simply adding an additional class .table-striped to the .table base class, as shown below:\par
+\par
+ExampleTry this code \f0\'bb\par
+<table class="table table-striped">\par
+    <thead>\par
+        <tr>\par
+            <th>#</th>\par
+            <th>First Name</th>\par
+            <th>Last Name</th>\par
+            <th>Email</th>\par
+        </tr>\par
+    </thead>\par
+    <tbody>\par
+        <tr>\par
+            <td>1</td>\par
+            <td>Clark</td>\par
+            <td>Kent</td>\par
+            <td>clarkkent@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>2</td>\par
+            <td>Peter</td>\par
+            <td>Parker</td>\par
+            <td>peterparker@mail.com</td>\par
+        </tr>  \par
+        <tr>\par
+            <td>3</td>\par
+            <td>John</td>\par
+            <td>Carter</td>\par
+            <td>johncarter@mail.com</td>\par
+        </tr>                  \par
+    </tbody>\par
+</table>\par
+\f1\emdash  The output of the above example will look something like this:\par
+\par
+Bootstrap Zebra Striped Table\par
+Creating Bordered Tables\par
+You can add borders on all sides of the table and cells by adding the modifier class .table-bordered to the .table base class, as shown in the following example:\par
+\par
+ExampleTry this code \f0\'bb\par
+<table class="table table-bordered">\par
+    <thead>\par
+        <tr>\par
+            <th>#</th>\par
+            <th>First Name</th>\par
+            <th>Last Name</th>\par
+            <th>Email</th>\par
+        </tr>\par
+    </thead>\par
+    <tbody>\par
+        <tr>\par
+            <td>1</td>\par
+            <td>Clark</td>\par
+            <td>Kent</td>\par
+            <td>clarkkent@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>2</td>\par
+            <td>Peter</td>\par
+            <td>Parker</td>\par
+            <td>peterparker@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>3</td>\par
+            <td>John</td>\par
+            <td>Carter</td>\par
+            <td>johncarter@mail.com</td>\par
+        </tr>                    \par
+    </tbody>\par
+</table>\par
+\f1\emdash  The output of the above example will look something like this:\par
+\par
+Bootstrap Table with Borders\par
+Creating Borderless Tables\par
+You can also create borderless tables using the class .table-borderless on the .table element.\par
+\par
+ExampleTry this code \f0\'bb\par
+<table class="table table-borderless">\par
+    <thead>\par
+        <tr>\par
+            <th>#</th>\par
+            <th>First Name</th>\par
+            <th>Last Name</th>\par
+            <th>Email</th>\par
+        </tr>\par
+    </thead>\par
+    <tbody>\par
+        <tr>\par
+            <td>1</td>\par
+            <td>Clark</td>\par
+            <td>Kent</td>\par
+            <td>clarkkent@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>2</td>\par
+            <td>Peter</td>\par
+            <td>Parker</td>\par
+            <td>peterparker@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>3</td>\par
+            <td>John</td>\par
+            <td>Carter</td>\par
+            <td>johncarter@mail.com</td>\par
+        </tr>                    \par
+    </tbody>\par
+</table>\par
+\f1\emdash  The output of the above example will look something like this:\par
+\par
+Bootstrap Borderless Table\par
+Enabling Hover State on Table Rows\par
+You can also enable a hover state on table rows within a <tbody> element by adding the modifier class .table-hover to the .table base class. Let's try out the following example:\par
+\par
+ExampleTry this code \f0\'bb\par
+<table class="table table-hover">\par
+    <thead>\par
+        <tr>\par
+            <th>#</th>\par
+            <th>First Name</th>\par
+            <th>Last Name</th>\par
+            <th>Email</th>\par
+        </tr>\par
+    </thead>\par
+    <tbody>\par
+        <tr>\par
+            <td>1</td>\par
+            <td>Clark</td>\par
+            <td>Kent</td>\par
+            <td>clarkkent@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>2</td>\par
+            <td>Peter</td>\par
+            <td>Parker</td>\par
+            <td>peterparker@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>3</td>\par
+            <td>John</td>\par
+            <td>Carter</td>\par
+            <td>johncarter@mail.com</td>\par
+        </tr>                    \par
+    </tbody>\par
+</table>\par
+\f1\emdash  The output of the above example will look something like this:\par
+\par
+Bootstrap Table with Hover States\par
+Creating Small or Compact Tables\par
+You can also make your tables more compact and save the space through adding the modifier class .table-sm to the .table base class. The .table-sm class makes the table compact by cutting all cell padding in half. Let's take a look at the following example:\par
+\par
+ExampleTry this code \f0\'bb\par
+<table class="table table-sm">\par
+    <thead>\par
+        <tr>\par
+            <th>#</th>\par
+            <th>First Name</th>\par
+            <th>Last Name</th>\par
+            <th>Email</th>\par
+        </tr>\par
+    </thead>\par
+    <tbody>\par
+        <tr>\par
+            <td>1</td>\par
+            <td>Clark</td>\par
+            <td>Kent</td>\par
+            <td>clarkkent@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>2</td>\par
+            <td>Peter</td>\par
+            <td>Parker</td>\par
+            <td>peterparker@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>3</td>\par
+            <td>John</td>\par
+            <td>Carter</td>\par
+            <td>johncarter@mail.com</td>\par
+        </tr>                    \par
+    </tbody>\par
+</table>\par
+\f1\emdash  The output of the above example will look something like this:\par
+\par
+Bootstrap Compact Table\par
+Setting Table Head Colors\par
+Similar to light and dark tables, you can use the modifier classes .table-light or .table-dark on the <thead> element to make it appear in light or dark gray.\par
+\par
+The following example will create a table with light gray background head.\par
+\par
+ExampleTry this code \f0\'bb\par
+<table class="table">\par
+    <thead class="table-light">\par
+        <tr>\par
+            <th>#</th>\par
+            <th>First Name</th>\par
+            <th>Last Name</th>\par
+            <th>Email</th>\par
+        </tr>\par
+    </thead>\par
+    <tbody>\par
+        <tr>\par
+            <td>1</td>\par
+            <td>Clark</td>\par
+            <td>Kent</td>\par
+            <td>clarkkent@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>2</td>\par
+            <td>Peter</td>\par
+            <td>Parker</td>\par
+            <td>peterparker@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>3</td>\par
+            <td>John</td>\par
+            <td>Carter</td>\par
+            <td>johncarter@mail.com</td>\par
+        </tr>                    \par
+    </tbody>\par
+</table>\par
+\f1\emdash  The output of the above example will look something like this:\par
+\par
+Bootstrap Table with Light Head\par
+The following example will create a table with dark gray background head.\par
+\par
+ExampleTry this code \f0\'bb\par
+<table class="table">\par
+    <thead class="table-dark">\par
+        <tr>\par
+            <th>#</th>\par
+            <th>First Name</th>\par
+            <th>Last Name</th>\par
+            <th>Email</th>\par
+        </tr>\par
+    </thead>\par
+    <tbody>\par
+        <tr>\par
+            <td>1</td>\par
+            <td>Clark</td>\par
+            <td>Kent</td>\par
+            <td>clarkkent@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>2</td>\par
+            <td>Peter</td>\par
+            <td>Parker</td>\par
+            <td>peterparker@mail.com</td>\par
+        </tr>\par
+        <tr>\par
+            <td>3</td>\par
+            <td>John</td>\par
+            <td>Carter</td>\par
+            <td>johncarter@mail.com</td>\par
+        </tr>                    \par
+    </tbody>\par
+</table>\par
+\f1\emdash  The output of the above example will look something like this:\par
+\par
+Bootstrap Table with Dark Head\par
+Creating Responsive Tables with Bootstrap\par
+You can also create responsive tables to enable horizontal scrolling on small devices.\par
+\par
+To make any table responsive just place it inside a <div> element and apply the .table-responsive class on it. You can also specify when the table should have a scrollbar, based on the viewport width (i.e. breakpoints), using the classes .table-responsive\{-sm|-md|-lg|-xl\}.\par
+\par
+Let's try out the following example to understand how it basically works:\par
+\par
+ExampleTry this code \f0\'bb\par
+<!DOCTYPE html>\par
+<html lang="en">\par
+<head>\par
+<meta charset="utf-8">\par
+<meta name="viewport" content="width=device-width, initial-scale=1">\par
+<title>Bootstrap Responsive Table</title>\par
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">\par
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>\par
+<style>\par
+    /* Custom style to make this example easy to understand */\par
+    table * \{\par
+        white-space: nowrap;\par
+    \}\par
+</style>\par
+</head>\par
+<body>\par
+<div class="m-4">\par
+    <div class="table-responsive"> \par
+        <table class="table">\par
+            <thead>\par
+                <tr>\par
+                    <th>#</th>\par
+                    <th>First Name</th>\par
+                    <th>Last Name</th>\par
+                    <th>Email</th>\par
+                    <th>Biography</th>\par
+                </tr>\par
+            </thead>\par
+            <tbody>\par
+                <tr>\par
+                    <td>1</td>\par
+                    <td>Clark</td>\par
+                    <td>Kent</td>\par
+                    <td>clarkkent@mail.com</td>\par
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>\par
+                </tr>\par
+                <tr>\par
+                    <td>2</td>\par
+                    <td>John</td>\par
+                    <td>Carter</td>\par
+                    <td>johncarter@mail.com</td>\par
+                    <td>Vestibulum consectetur scelerisque bibendum scelerisque purus.</td>\par
+                </tr>\par
+                <tr>\par
+                    <td>3</td>\par
+                    <td>Peter</td>\par
+                    <td>Parker</td>\par
+                    <td>peterparker@mail.com</td>\par
+                    <td>Integer pulvinar leo id risus interdum vel metus dignissim.</td>\par
+                </tr>\par
+            </tbody>\par
+        </table>\par
+    </div> \par
+    <p class="mt-4"><strong>Note:</strong> Change the editor layout/orientation to see how responsive table works.</p>\par
+</div>\par
+</body>\par
+</html>\par
+Tip: Text inside the cells of <thead> are always vertical aligned to the bottom. Whereas, text inside the cells of <tbody> inherit their alignment from <table> and are vertically aligned to the top by default. Use the vertical align classes to re-align text where needed.\par
+}
+ 
