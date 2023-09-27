@@ -1,0 +1,24 @@
+<!--wap to accept radius and print area and circ of circle-->
+<html>
+    <script language="javascript">
+        function Area()
+        {
+            var radius=document.getElementById("r").value;
+            var result=3.14*radius*radius;
+            document.getElementById("res").innerHTML=("Area of Circle = " +result);
+        }
+
+        function Circ()
+        {
+            var radius=document.getElementById("r").value;
+            var result=2*3.14*radius;
+            document.getElementById("res").innerHTML=("Circumferance of circle = " +result);
+        }
+    </script>
+    <form name="f1">
+        Enter Radius : <input type="text" id="r"><br><br>
+        <input type="button" value="Area" onclick="Area();"/>
+        <input type="button" value="Circumferance" onclick="Circ();"/><br><br>
+        <span id="res">Result</span>
+    </form>
+</html>

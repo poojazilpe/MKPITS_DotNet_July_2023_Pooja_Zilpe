@@ -1,0 +1,27 @@
+<!---wap to accept username and password and display login successfull if username is admin and password is admin other wise display invalid credentials.--->
+<html>
+<form name="f1">
+enter login details : <br><br>
+User Name : <input type=text id="t1" /> <br><br>
+Password : <input type=password id="t2" /> <br><br>
+<button type=button onclick="check();">Submit</button><br><br>
+<div id="res" >--</div>
+
+</form>
+<script language="javascript">
+function check()
+{
+ var u=document.getElementById("t1").value;
+ var p=document.getElementById("t2").value;
+ if(u=="admin" && p=="admin")
+ {
+ document.getElementById("res").innerHTML="Login successfully";
+ }
+ else
+ {
+ document.getElementById("res").innerHTML="Invalid credentials ! ";
+ }
+}
+
+</script>
+</html>
