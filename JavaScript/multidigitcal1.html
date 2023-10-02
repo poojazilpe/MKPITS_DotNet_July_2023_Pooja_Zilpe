@@ -13,12 +13,12 @@
 
 <body>
 <div class="jumbotron text-center">
-Calculator
+<h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Calculator</h2>
 </div>
 <div class="container">
     <form name="f1">
         <div class="form-group">
-        <input type="text" class="form-control" name="t1" id="t1"/>
+        <input type="text" class="form-control text-center" name="t1" id="t1"/>
         </div>
         <div class="row">
             <div class="col">
@@ -71,13 +71,13 @@ Calculator
         </div>
         <div class="row">
             <div class="col">
-                <button type=button name="b11" class="form-control mt-2" onclick="div();" >/</button>
+                <button type=button name="b14" class="form-control mt-2" onclick="div();" >/</button>
             </div>
             <div class="col">
-                <button type=button name="b12" class="form-control mt-2" onclick="equal();" >=</button>
+                <button type=button name="b15" class="form-control mt-2" onclick="equal();" >=</button>
             </div>
             <div class="col">
-                <button type=button name="b13" class="form-control mt-2" onclick="ac();" >AC</button>
+                <button type=button name="b16" class="form-control mt-2" onclick="ac();" >AC</button>
             </div>
         </div>
 
@@ -91,53 +91,123 @@ Calculator
     var result=0
     function one()
     {
+        if(document.f1.t1.value!="+" && document.f1.t1.value!="-" && document.f1.t1.value!="*" && document.f1.t1.value!="/")
+        {
+            document.f1.t1.value=document.f1.t1.value+"1";
+        }
+        else
+        {
         op=document.f1.t1.value;
         document.f1.t1.value="1";
+        }
     }
     function two()
     {
+        if(document.f1.t1.value!="+" && document.f1.t1.value!="-" && document.f1.t1.value!="*" && document.f1.t1.value!="/")
+        {
+            document.f1.t1.value=document.f1.t1.value+"2";
+        }
+        else
+        {
         op=document.f1.t1.value;
         document.f1.t1.value="2";
+        }
     }
     function three()
     {
+        if(document.f1.t1.value!="+" && document.f1.t1.value!="-" && document.f1.t1.value!="*" && document.f1.t1.value!="/")
+        {
+            document.f1.t1.value=document.f1.t1.value+"3";
+        }
+        else
+        {
         op=document.f1.t1.value;
         document.f1.t1.value="3";
+        }
     }
     function four()
     {
+        if(document.f1.t1.value!="+" && document.f1.t1.value!="-" && document.f1.t1.value!="*" && document.f1.t1.value!="/")
+        {
+            document.f1.t1.value=document.f1.t1.value+"4";
+        }
+        else
+        {
         op=document.f1.t1.value;
         document.f1.t1.value="4";
+        }
     }
     function five()
     {
+        if(document.f1.t1.value!="+" && document.f1.t1.value!="-" && document.f1.t1.value!="*" && document.f1.t1.value!="/")
+        {
+            document.f1.t1.value=document.f1.t1.value+"5";
+        }
+        else
+        {
         op=document.f1.t1.value;
         document.f1.t1.value="5";
+        }
     }
     function six()
     {
+        if(document.f1.t1.value!="+" && document.f1.t1.value!="-" && document.f1.t1.value!="*" && document.f1.t1.value!="/")
+        {
+            document.f1.t1.value=document.f1.t1.value+"2";
+        }
+        else
+        {
         op=document.f1.t1.value;
         document.f1.t1.value="6";
+        }
     }
     function seven()
     {
+        if(document.f1.t1.value!="+" && document.f1.t1.value!="-" && document.f1.t1.value!="*" && document.f1.t1.value!="/")
+        {
+            document.f1.t1.value=document.f1.t1.value+"7";
+        }
+        else
+        {
         op=document.f1.t1.value;
         document.f1.t1.value="7";
+        }
     }
     function eight()
     {
+        if(document.f1.t1.value!="+" && document.f1.t1.value!="-" && document.f1.t1.value!="*" && document.f1.t1.value!="/")
+        {
+            document.f1.t1.value=document.f1.t1.value+"8";
+        }
+        else
+        {
         op=document.f1.t1.value;
         document.f1.t1.value="8";
+        }
     }
     function nine()
     {
+        if(document.f1.t1.value!="+" && document.f1.t1.value!="-" && document.f1.t1.value!="*" && document.f1.t1.value!="/")
+        {
+            document.f1.t1.value=document.f1.t1.value+"9";
+        }
+        else
+        {
         op=document.f1.t1.value;
         document.f1.t1.value="9";
+        }
     }
     function zero()
     {
+        if(document.f1.t1.value!="+" && document.f1.t1.value!="-" && document.f1.t1.value!="*" && document.f1.t1.value!="/")
+        {
+            document.f1.t1.value=document.f1.t1.value+"0";
+        }
+        else
+        {
         op=document.f1.t1.value;
         document.f1.t1.value="0";
+        }
     }
     function plus()
     {
@@ -171,19 +241,19 @@ Calculator
         cnum=parseInt(document.f1.t1.value);
         if(op=="+")
         {
-            document.getElementById("t1").value=pnum+cnum;
+            document.f1.t1.value=pnum+cnum;
         }
         else if(op=="-")
         {
-            document.getElementById("t1").value=pnum-cnum;  
+            document.f1.t1.value=pnum-cnum;  
         }
         else if(op=="*")
         {
-            document.getElementById("t1").value=pnum*cnum;  
+            document.f1.t1.value=pnum*cnum;  
         }
         else if(op=="/")
         {
-            document.getElementById("t1").value=pnum/cnum;  
+            document.f1.t1.value=pnum/cnum;  
         }
     }
        

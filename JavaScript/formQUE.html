@@ -1,0 +1,81 @@
+<!--creating a Queastion Paper in javasript-->
+<html lang="en">
+<head>
+  <title>Question Paper</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="jumbotron text-center"><b style="font-size: 20px;">Score Form</b></div>
+    <div class="container">
+        <form name="f1">
+            <div class="form-group">
+                
+                <div class="form-check">
+                    <p> 1. What is the capital of India?</p>
+                    <div class="row">
+                        <div class="col">
+                            <input type="radio" class="form-check-input" name="c1" value="a1"/>Delhi
+                        </div>
+                        <div class="col">
+                            <input type="radio" class="form-check-input" name="c1" value="a2"/>Mumbai
+                        </div>
+                    </div><br>
+                    <p> 2. What is the capital of Maharashtra?</p>
+                    <div class="row">
+                        <div class="col">
+                            <input type="radio" class="form-check-input" name="d1" value="b1"/>Nagpur
+                        </div>
+                        <div class="col">
+                            <input type="radio" class="form-check-input" name="d1" value="b2"/>Mumbai
+                        </div>
+                    </div><br>
+                    <p> 3. What is the capital of Mp?</p>
+                    <div class="row">
+                        <div class="col">
+                            <input type="radio" class="form-check-input" name="e1" value="x1"/>Bhopal
+                        </div>
+                        <div class="col">
+                            <input type="radio" class="form-check-input" name="e1" value="x2"/>Nagpur
+                        </div>
+                    </div>
+                </div><br><br>
+                <button type="button" class="btn btn-primary" onclick="submit();">Submit</button>
+            </div><br><br>
+            <span id="res">Score out of 3 is </span>
+        </form>
+    </div>
+
+</body>
+<script lannguage="javascript">
+    
+    function submit()
+    {
+        var score=0;
+    var select=document.f1.c1.value;
+    var current="a1";
+    if(selectc1==currentc1)
+    {
+        
+        score++;
+    }
+    var select=document.f1.d1.value;
+    var current="b2";
+     if(select==current)
+    {
+        Score++;
+    }
+    var select=document.f1.e1.value;
+    var current="x1";
+     if(select==current)
+    {
+        Score++;
+    }
+    var scoreElement=document.getElementById("res").innerHTML="Score ="+score
+    
+}
+</script>
