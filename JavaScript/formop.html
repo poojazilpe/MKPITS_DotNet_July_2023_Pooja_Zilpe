@@ -22,13 +22,13 @@
             <div class="form-check">
                 <div class="row">
                     <div class="col">
-                        <input type="checkbox" class="form-check-input" name="a1" id="a1"onclick="add();">Add
+                        <input type="checkbox" class="form-check-input" name="a1" id="a1" value="add">Add
                     </div>
                     <div class="col">
-                        <input type="checkbox" class="form-check-input" name="a1" onclick="sub();">Sub
+                        <input type="checkbox" class="form-check-input" name="a2" id="a2" value="sub" >Sub
                     </div>
                     <div class="col">
-                        <input type="checkbox" class="form-check-input" name="a1" onclick="mul();">Mul
+                        <input type="checkbox" class="form-check-input" name="a3" id="a3" value="mul" >Mul
                     </div>
                 </div>
             </div><br><br>
@@ -58,33 +58,32 @@
 </body>
 
 <script language="javascript">
-    function add()
-    {
-        var num1=parseInt(document.f1.t1.value);
-        var num2=parseInt(document.f1.t2.value);
-        var result=num1+num2;
-        document.getElementById("ad").innerHTML=(""+result);
-    }
-    function sub()
-    {
-        var num1=parseInt(document.f1.t1.value);
-        var num2=parseInt(document.f1.t2.value);
-        var result=num1-num2;
-        document.getElementById("sb").innerHTML=(""+result);
-        
-    }
-    function mul()
-    {
-        var num1=parseInt(document.f1.t1.value);
-        var num2=parseInt(document.f1.t2.value);
-        var result=num1*num2;
-        document.getElementById("ml").innerHTML=(""+result);
-        
-    }
     function display()
     {
-        
+       var num1=parseInt(document.getElementById("t1").value);
+       var num2=parseInt(document.getElementById("t2").value);
        
+       var res1="";
+       var result=0
+       var res=document.getElementById("a1").checked;
+       if(res==true)
+       {
         
+        res1="add";
+        
+        alert(res1);
+       }
+       var res=document.getElementById("a2").checked;
+       if(res==true)
+       {
+        res1 +="sub";
+       }
+       var res=document.getElementById("a2").checked;
+       if(res==true)
+       {
+        res1 +="mul";
+       }
+       document.getElementById("ad").innerHTML=""+res1;
+
     }
 </script>

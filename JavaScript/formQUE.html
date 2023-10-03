@@ -19,63 +19,94 @@
                     <p> 1. What is the capital of India?</p>
                     <div class="row">
                         <div class="col">
-                            <input type="radio" class="form-check-input" name="c1" value="a1"/>Delhi
+                            <input type="radio" class="form-check-input" name="capital" value="delhi"/>Delhi
                         </div>
                         <div class="col">
-                            <input type="radio" class="form-check-input" name="c1" value="a2"/>Mumbai
+                            <input type="radio" class="form-check-input" name="capital" value="mumbai"/>Mumbai
                         </div>
                     </div><br>
                     <p> 2. What is the capital of Maharashtra?</p>
                     <div class="row">
                         <div class="col">
-                            <input type="radio" class="form-check-input" name="d1" value="b1"/>Nagpur
+                            <input type="radio" class="form-check-input" name="capital2" value="nagpur"/>Nagpur
                         </div>
                         <div class="col">
-                            <input type="radio" class="form-check-input" name="d1" value="b2"/>Mumbai
+                            <input type="radio" class="form-check-input" name="capital2" value="mumbai"/>Mumbai
                         </div>
                     </div><br>
                     <p> 3. What is the capital of Mp?</p>
                     <div class="row">
                         <div class="col">
-                            <input type="radio" class="form-check-input" name="e1" value="x1"/>Bhopal
+                            <input type="radio" class="form-check-input" name="capital3" value="bhopal"/>Bhopal
                         </div>
                         <div class="col">
-                            <input type="radio" class="form-check-input" name="e1" value="x2"/>Nagpur
+                            <input type="radio" class="form-check-input" name="capital3" value="nagpur"/>Nagpur
                         </div>
                     </div>
                 </div><br><br>
-                <button type="button" class="btn btn-primary" onclick="submit();">Submit</button>
+                <button type="button" class="btn btn-primary" onclick="check();">Submit</button>
             </div><br><br>
-            <span id="res">Score out of 3 is </span>
+            <span id="res">Result </span>
         </form>
     </div>
 
 </body>
 <script lannguage="javascript">
     
-    function submit()
+    function check()
     {
-        var score=0;
-    var select=document.f1.c1.value;
-    var current="a1";
-    if(selectc1==currentc1)
-    {
-        
-        score++;
-    }
-    var select=document.f1.d1.value;
-    var current="b2";
-     if(select==current)
-    {
-        Score++;
-    }
-    var select=document.f1.e1.value;
-    var current="x1";
-     if(select==current)
-    {
-        Score++;
-    }
-    var scoreElement=document.getElementById("res").innerHTML="Score ="+score
+        var total=0;
+        var res1;
+        var ans;
+        //for question 1
+
+        ans= document.getElementsByName("capital");
+        for(i=0;i<ans.length;i++)
+        {
+            if(ans[i].checked)
+            {
+                res1=ans[i].value;
+            }
+        }
+        // checking the right ans for question 1
+
+        if(res1=="delhi")
+        {
+            total=total+1;
+        }
+       
+        // for question 2
+
+        ans= document.getElementsByName("capital2");
+        for(i=0;i<ans.length;i++)
+        {
+            if(ans[i].checked)
+            {
+                res1=ans[i].value
+            }
+        }
+        // checking the right ans for question 2
+
+        if(res1=="mumbai")
+        {
+            total=total+1;
+        }
+
+        //for question 3
+
+        ans=document.getElementsByName("capital3")
+        for(i=0;i<ans.length;i++)
+        {
+            if(ans[i].checked)
+            {
+                res1=ans[i].value;
+            }
+        }
+        if(res1=="bhopal")
+        {
+            total=total+1;
+        }
+    var scoreElement=document.getElementById("res").innerHTML="Total marks out of 3 : "+total;
     
 }
 </script>
