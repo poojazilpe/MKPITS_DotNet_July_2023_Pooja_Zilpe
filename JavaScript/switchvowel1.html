@@ -1,0 +1,43 @@
+<!---wap to accept character and print whether it is vowel or not using form--->
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h3>Switch Vowel</h3>
+    </div>
+    <div class="container">
+        <form class="form-group">
+            <lable for="c1">Enter Character</lable>
+            <input type="text" class="form-control" id="c1"/>
+            <button type="button" class="btn btn-primary mt-4" onclick="check();">Submit</button><br><br>
+            <span id="res">Result</span>
+        </form>
+    </div>
+</body>
+<script language="javascript">
+    
+    function check()
+    {
+        var ch=document.getElementById("c1").value;
+		switch(ch)
+		{
+		case 'a' :
+		case 'e':
+		case 'i' :
+		case 'o' :
+		case 'u' :
+		document.getElementById("res").innerHTML="it is vowel";
+		break;
+		default :
+		document.getElementById("res").innerHTML="it is consonent";
+		
+        }
+}
+</script>
