@@ -1,17 +1,18 @@
 #include<stdio.h>
 void main()
 {
-	int num;
+	int num,i;
 	int fact=1;
 	printf("Enter No :");
 	scanf("%d",&num);
-	do
+	for(i=1;i<num;i++)
 	{
-		fact=fact*num;
+		fact=fact*i;
 		num=num-1;
+	
 	}
-	while(num>0);
-	printf("Factorial = %d",fact);
+	
+	printf("Factorial = %d",fact,num);
 	
 }
 
