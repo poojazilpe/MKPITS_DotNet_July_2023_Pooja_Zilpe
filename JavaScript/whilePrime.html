@@ -22,21 +22,25 @@
     function display()
     {
     var num= parseInt(document.getElementById("c1").value);
-    var rem=0;
-    var cnt=2;
-   while(cnt<=num)
+    var i=1;
+    var cnt=0;
+   while(i<=num)
    {
-    rem=num%cnt;
-    if(rem==0)
+    if(num%i==0)
     {
-        document.getElementById("res").innerHTML="It is not prime no"; 
-        break;
+        
+        cnt++;
     }
+    i++;
     
    }
-   if(num==cnt)
+   if(cnt==2)
    {
     document.getElementById("res").innerHTML="It is prime no"; 
+   }
+   else
+   {
+    document.getElementById("res").innerHTML="It is not prime no"; 
    }
      
     
