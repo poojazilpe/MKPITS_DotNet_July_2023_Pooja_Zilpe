@@ -1,0 +1,18 @@
+<!--calling another function from function -->
+<script>
+    function gettotal(m1,m2,m3)
+    {
+        var total=parseInt(m1)+parseInt(m2)+parseInt(m3);
+        return total;
+    }
+    function getper(total)
+    {
+       var per=(total/300.0)*100.0;
+       return per; 
+    }
+    var t=gettotal(80,90,100);
+    alert("Total : "+t);
+    var p=getper(t);
+    alert("Percentage : " +p);
+    
+</script>
