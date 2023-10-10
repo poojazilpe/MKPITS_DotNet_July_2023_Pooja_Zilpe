@@ -1,0 +1,37 @@
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+<div class="container">
+    <div class="jumbotron text-center">Nested For Loop</div>
+    <form class="form-group">
+        Enter Number : <input type="text" class="form-control" name="t1" id="t1"/><br><br>
+        <button type="button" class="btn btn-primary" onclick="display();">Ok</button><br><br>
+        <span id="res">Result</span>
+    </form>
+</div>  
+  </body>
+  <script>
+    function display()
+    {
+        var i,j;
+        var num=document.getElementById("t1").value;
+        result=" ";
+        for(i=1;i<=num;i++)
+        {
+            for(j=1;j<=num;j++)
+            {
+                result+= i + " ";
+            }
+            result+="<br>";
+        }
+        document.getElementById("res").innerHTML=result;
+    }
+    
+  </script>
