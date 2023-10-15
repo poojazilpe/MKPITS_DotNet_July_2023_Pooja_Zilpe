@@ -6,20 +6,28 @@ using System.Threading.Tasks;
 
 namespace ifelselarger
 {
-    class Program
+    Internal class Program
     {
         static void Main(string[] args)
         {
             int m;
             Console.WriteLine("Enter no :");
             m = Convert.ToInt32(Console.ReadLine());
-            if (m >= 0)
+            if (m < 0)
+            {
+                Console.WriteLine("Value of n = -1");
+            }
+            else if (m == 0)
+            {
+                Console.WriteLine("Value of n = 0");
+            }
+            else if(m>0)
             {
                 Console.WriteLine("Value of n = 1");
             }
             else
             {
-                Console.WriteLine("Value of n = -1");
+                Console.WriteLine("Invalid Value");
             }
             Console.ReadKey();
             

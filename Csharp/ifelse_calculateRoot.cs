@@ -20,14 +20,14 @@ namespace ifelse_calculateRoot
             Console.WriteLine("Enter the value of c :");
             c = Convert.ToInt32(Console.ReadLine());
             result = (b * b) - 4 * a * c;
-            if(a!=0)
+            if(result!=0)
             {
                 Console.WriteLine("Root are imaginary");
 
             }
             else
             {
-                Console.WriteLine("the real Number : {0}",result);
+                Console.WriteLine("the real Number ");
             }
             Console.ReadKey();
         }

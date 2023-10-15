@@ -10,10 +10,10 @@ namespace ifelseVowel
     {
         static void Main(string[] args)
         {
-            string alphabate;
+            char ch;
             Console.WriteLine("Enter any alphabate :");
-            alphabate = Console.ReadLine();
-            if (alphabate == "a" || alphabate == "e" || alphabate == "i" || alphabate == "o" || alphabate == "u")
+            ch = Convert.ToChar(Console.ReadLine());
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
             {
                 Console.WriteLine("The alphabet is a Vowel");
             }
