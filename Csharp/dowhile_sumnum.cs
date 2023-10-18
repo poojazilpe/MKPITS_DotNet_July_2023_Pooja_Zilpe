@@ -4,29 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace while_prime1
+namespace dowhile_sumnum
 {
     class Program
     {
         static void Main(string[] args)
         {
             int num = 1;
-            int cnt = 0;
-            
-            while(num<=20)
-            {
-
-                if(num%cnt==0)
-                {
-                    flag = 1;
-                    break;
-                }
-                num++;
-            }
-            if(flag==0)
+            int sum = 0;
+            do
             {
                 Console.WriteLine(num);
-            }
+                sum = sum + num;
+                num++;
+            } while (num <= 10);
+            Console.WriteLine("Sum = {0}",sum);
             Console.ReadKey();
         }
     }
