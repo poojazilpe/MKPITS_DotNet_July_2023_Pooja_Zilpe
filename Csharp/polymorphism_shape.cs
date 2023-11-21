@@ -8,38 +8,49 @@ namespace polymorphism_shape
 {
     class shape
     {
-        public virtual void draw()
+        public int l;
+        public int b;
+        
+
+        public virtual void calculatearea(int l,int b)
         {
-            Console.WriteLine("Drawing......");
+            Console.WriteLine("Area ");
+        }
+
+    }
+    class rectangle:shape
+    {
+       
+        public override void calculatearea(int l,int b)
+        {
+            this.l = l;
+            this.b = b;
+            float area = l * b;
+            Console.WriteLine("Area of rectangle : "+area);
         }
     }
-    class rectangle: shape
+    class circle : shape
     {
-        public override void draw()
+        
+        public override void calculatearea(int l,int b)
         {
-            Console.WriteLine("Drawing Rectangle......");
-        }
-    }
-    class Circle :shape
-    {
-        public override void draw()
-        {
-            Console.WriteLine("Drawing Circle......");
+            this.l = l;
+            this.b = b;
+            float area = 0.5f*l*b;
+            Console.WriteLine("Area of triangle : " + area);
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            shape s;
-            s = new shape();
-            s.draw();
-            s = new rectangle();
-            s.draw();
-            s = new Circle();
-            s.draw();
-            Console.ReadKey();
 
+            shape s;
+            s= new rectangle();
+            s.calculatearea(5,6);
+            s = new circle();
+            s.calculatearea(2,3);
+            Console.ReadKey();
         }
     }
 }
