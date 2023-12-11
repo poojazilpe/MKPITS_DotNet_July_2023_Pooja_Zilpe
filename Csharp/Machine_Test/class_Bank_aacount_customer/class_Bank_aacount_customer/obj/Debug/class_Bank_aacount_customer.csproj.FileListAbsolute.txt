@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\class_Bank_aacount_customer\class_Bank_aacount_customer\bin\Debug\class_Bank_aacount_customer.exe.config
+C:\Users\HP\source\repos\class_Bank_aacount_customer\class_Bank_aacount_customer\bin\Debug\class_Bank_aacount_customer.exe
+C:\Users\HP\source\repos\class_Bank_aacount_customer\class_Bank_aacount_customer\bin\Debug\class_Bank_aacount_customer.pdb
+C:\Users\HP\source\repos\class_Bank_aacount_customer\class_Bank_aacount_customer\obj\Debug\class_Bank_aacount_customer.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\class_Bank_aacount_customer\class_Bank_aacount_customer\obj\Debug\class_Bank_aacount_customer.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\class_Bank_aacount_customer\class_Bank_aacount_customer\obj\Debug\class_Bank_aacount_customer.exe
+C:\Users\HP\source\repos\class_Bank_aacount_customer\class_Bank_aacount_customer\obj\Debug\class_Bank_aacount_customer.pdb

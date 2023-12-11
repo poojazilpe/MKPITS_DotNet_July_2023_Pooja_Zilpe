@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\MachineTest_Author_Book\MachineTest_Author_Book\bin\Debug\MachineTest_Author_Book.exe.config
+C:\Users\HP\source\repos\MachineTest_Author_Book\MachineTest_Author_Book\bin\Debug\MachineTest_Author_Book.exe
+C:\Users\HP\source\repos\MachineTest_Author_Book\MachineTest_Author_Book\bin\Debug\MachineTest_Author_Book.pdb
+C:\Users\HP\source\repos\MachineTest_Author_Book\MachineTest_Author_Book\obj\Debug\MachineTest_Author_Book.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\MachineTest_Author_Book\MachineTest_Author_Book\obj\Debug\MachineTest_Author_Book.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\MachineTest_Author_Book\MachineTest_Author_Book\obj\Debug\MachineTest_Author_Book.exe
+C:\Users\HP\source\repos\MachineTest_Author_Book\MachineTest_Author_Book\obj\Debug\MachineTest_Author_Book.pdb

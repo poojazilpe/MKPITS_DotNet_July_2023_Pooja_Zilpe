@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\Machintest_Animal_hirarchical\Machintest_Animal_hirarchical\bin\Debug\Machintest_Animal_hirarchical.exe.config
+C:\Users\HP\source\repos\Machintest_Animal_hirarchical\Machintest_Animal_hirarchical\bin\Debug\Machintest_Animal_hirarchical.exe
+C:\Users\HP\source\repos\Machintest_Animal_hirarchical\Machintest_Animal_hirarchical\bin\Debug\Machintest_Animal_hirarchical.pdb
+C:\Users\HP\source\repos\Machintest_Animal_hirarchical\Machintest_Animal_hirarchical\obj\Debug\Machintest_Animal_hirarchical.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\Machintest_Animal_hirarchical\Machintest_Animal_hirarchical\obj\Debug\Machintest_Animal_hirarchical.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Machintest_Animal_hirarchical\Machintest_Animal_hirarchical\obj\Debug\Machintest_Animal_hirarchical.exe
+C:\Users\HP\source\repos\Machintest_Animal_hirarchical\Machintest_Animal_hirarchical\obj\Debug\Machintest_Animal_hirarchical.pdb
