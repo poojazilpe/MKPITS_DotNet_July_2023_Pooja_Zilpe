@@ -1,0 +1,12 @@
+create table Mkpits(RollNo int,Name varchar(20),Address varchar(50),MobNo int)
+insert into Mkpits values(1,'Pooja','Chandan Nagar, Nagpur',70204577)
+insert into Mkpits values(2,'Chadrima','Ram Nagar, Nagpur',72586948)
+insert into Mkpits values(3,'Kareena','Pachpavli Nagar, Nagpur',79208577)
+insert into Mkpits values(4,'Akash','Wanadongari, Nagpur',78562874)
+insert into Mkpits values(5,'Ayushi','Dattawadi, Nagpur',73564278)
+insert into Mkpits values(6,'Lucky','Pachpavli, Nagpur',70897548)
+insert into Mkpits values(7,'David','Chapru Nagar, Nagpur',89635241)
+insert into Mkpits values(8,'Sarang','Kamal chauk, Nagpur',70896352)
+insert into Mkpits values(9,'Ashwin','Hudkeshwar, Nagpur',78963541)
+insert into Mkpits values(10,'Ayushree','Ajani, Nagpur',70207877)
+select * from Mkpits
