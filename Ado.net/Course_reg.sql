@@ -1,8 +1,10 @@
-create table TableNation(NationId int primary key, NationName varchar(500))
-insert into TableNation values(1,'India'),(2,'United-Nation'),(3,'Nepal'),(4,'Srilanka')
+create table TableNation1(NationId int primary key, NationName varchar(500))
+insert into TableNation1 values(1,'India'),(2,'United-Nation'),(3,'Nepal'),(4,'Srilanka')
+
 
 create table TableState(StateId int primary key,StateName varchar(500), NationId int foreign key(NationId) 
-references TableNation(NationId))
+references TableNation1(NationId))
+
 
 insert into TableState values(101,'Andhra Pradesh',1),
 							 (102,'Panjab',1),
@@ -40,6 +42,24 @@ insert into TableCity values(1001,'Visakhapatnam',101),
 							(1022,'Balangoda',108),
 							(1023,'Kolonna',108),
 							(1024,'Panamure',108)
-select * from TableNation
+
+create table TableCourseRegDetail(CourseRegId int primary key identity,CategoryId int, FullName varchar(1500),
+GenderId int)
+
+
+create table TableRegAdddress(RegAddressId int primary key identity, CourseRegId int foreign key(CourseRegId)
+references TableCourseRegDetail(CourseRegId), NationId int foreign key(NationId) 
+references TableNation1 (NationId), StateId int foreign key(StateId) references TableState(StateId),
+CityId int foreign key(CityId) references TableCity(CityId))
+
+create table TableFeeDetail(FeeID int primary key identity,CourseRegId int foreign key (CourseRegId)
+references TableCourseRegDetail(CourseRegId),TotalAmount decimal,MinPer decimal,PaidAmount decimal,
+BalAmount decimal,PaidDate datetime)
+drop table TableFeeDetail
+
+select * from TableNation1
 select * from TableState
 select * from TableCity
+select * from TableCourseRegDetail
+select * from TableRegAdddress
+select * from TableFeeDetail
