@@ -24,13 +24,17 @@ insert into TableProduct values(210,'Apple',1002,40000),
 							   (214,'LG',1004,30000),
 							   (215,'Sony',1001,60000)
 
-create table TableInvoiceDetails(Invoice_Detail_Id int primary key,
-Customer_Name varchar(500),Customer_Contact varchar(15),
-Product_Category_id int foreign key (Product_Category_id)
-references TableProductCategory(Product_Category_id), 
-ProductId int foreign key(ProductId)
-references TableProduct(ProductId),Residential_Type_Id int,
-Invoice_Date datetime,Quantity decimal,
-Price decimal,CGST decimal,SGST decimal,
-IGST decimal,CGST_value decimal,SGST_Value decimal,
-IGST_Value decimal,TotalAmount decimal)
+create table TableInvoiceDetails(Invoice_Detail_Id int identity primary key,
+								Customer_Name varchar(500),
+								Customer_Contact varchar(15),
+								Product_Category_id int foreign key (Product_Category_id)references TableProductCategory(Product_Category_id), 
+								ProductId int foreign key(ProductId)references TableProduct(ProductId),
+								Residential_Type_Id int,
+								Invoice_Date datetime,Quantity decimal,
+								Price decimal,CGST decimal,SGST decimal,
+								IGST decimal,CGST_value decimal,SGST_Value decimal,
+								IGST_Value decimal,TotalAmount decimal)
+
+								select * from TableInvoiceDetails
+
+								 
