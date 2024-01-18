@@ -11,16 +11,15 @@ namespace loginform
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (RadioButton4.Checked)
+            if (!IsPostBack)
             {
-                
+                stype = "Student";
                 TextBox3.Text = "1000";
 
             }
 
         }
-      public  enum category { Student, It }
-       public category cat;
+       static string stype = "Student";
         protected void Button1_Click(object sender, EventArgs e)
         {
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
@@ -134,7 +133,7 @@ namespace loginform
            
             if(RadioButton4.Checked)
             {
-                cat = category.Student;
+                stype = "Student";
                 TextBox3.Text = "1000";
                 TextBox4.Text = "0";
                 TextBox5.Text = "0";
@@ -148,7 +147,7 @@ namespace loginform
         {
             
 
-            if (cat.ToString()=="Student")
+            if (stype=="Student")
             {
                
 
@@ -166,7 +165,7 @@ namespace loginform
                     TextBox5.Text = bamt.ToString();
                 }
             }
-            else if (cat.ToString() == "It")
+            else if (stype == "It")
             {
                 
                 double ta = Convert.ToDouble(TextBox3.Text);
@@ -191,7 +190,7 @@ namespace loginform
         {
             if(RadioButton5.Checked)
             {
-                cat = category.It;
+                stype="It";
                 TextBox3.Text = "3000";
                 TextBox4.Text = "0";
                 TextBox5.Text = "0";
